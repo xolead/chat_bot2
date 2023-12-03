@@ -27,5 +27,10 @@ def main_func():
         if user_choice == "1":
             print(settlers)
 
+        elif user_choice == "2":
+            full_name = input("Введите имя и фамилию")
+            age = input("Введите возраст")
+            profession = input("Введите профессию")
+            settlers = add_persons(full_name, age, profession, settlers)
 
 main_func()

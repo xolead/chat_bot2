@@ -1,0 +1,31 @@
+def add_persons(full_name, age, profession, settlers):
+    settlers[full_name] = [age, profession]
+    print("добавили нового жителя", full_name, "профессия", profession, "возраст", age)
+    return settlers
+
+def list_professions(people_dict):
+    prof_set = set()
+    for k, v in people_dict.items():
+        prof_set.add(v[1])
+    return prof_set
+
+def main_func():
+    print("запускаем бота")
+    settlers = {}
+    add_persons("Саша","18","horny", settlers)
+    working = True
+    while working:
+        main_menu = '''
+        Какой будет у вас выбор, Чумба?
+        1 - сколько жителей
+        2 - добавить жителя
+        3 - список профессий
+        q - выход из программы
+        '''
+        user_choice = input(main_menu)
+
+        if user_choice == "1":
+            print(settlers)
+
+
+main_func()

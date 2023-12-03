@@ -1,3 +1,6 @@
+def print_age(age):
+	print(age)
+
 def add_persons(full_name, age, profession, settlers):
     settlers[full_name] = [age, profession]
     print("добавили нового жителя", full_name, "профессия", profession, "возраст", age)

@@ -33,4 +33,8 @@ def main_func():
             profession = input("Введите профессию")
             settlers = add_persons(full_name, age, profession, settlers)
 
+
+        elif user_choice == "3":
+            print("Список профессий:", list_professions(settlers))
+
 main_func()
